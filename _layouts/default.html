@@ -10,17 +10,17 @@
         {% seo %}
     </head>
 
-    <header class="site-header">
-        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    </header>
-
     <body>
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
-        </main>
-    </body>
+        <div class="wrapper">
+            <header class="site-header">
+                <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+            </header>
 
-    <footer></footer>
+            <main class="page-content" aria-label="Content">
+                {{ content }}
+            </main>
+
+            <footer class="site-footer"></footer>
+        </div>
+    </body>
 </html>
