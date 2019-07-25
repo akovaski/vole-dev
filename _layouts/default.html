@@ -20,7 +20,11 @@
                 {{ content }}
             </main>
 
-            <footer class="site-footer"></footer>
+            <footer class="site-footer">
+                {%- if page.subscribe or page.layout=="post" -%}
+                    <p class="rss-subscribe">Want more? Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+                {%- endif -%}
+            </footer>
         </div>
     </body>
 </html>
