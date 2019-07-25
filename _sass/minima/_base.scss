@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
+  background-color: $page-background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -24,6 +24,21 @@ body {
           font-feature-settings: "kern" 1;
   font-kerning: normal;
   min-height: 100vh;
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    background: $background-color;
+    max-width: $content-width;
+    min-height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
 }
 
 
@@ -157,30 +172,6 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: $content-width;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-}
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 
