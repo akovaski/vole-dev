@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-        {% feed_meta %}
         {% seo %}
     </head>
 
@@ -14,6 +13,16 @@
         <div class="wrapper">
             <header class="site-header">
                 <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+                {% if page.categories %}
+                <span class="post-categories">
+                    {% for category in page.categories %}
+                    <span class="post-category-sep">×</span>
+                    <a href="{{category | absolute_url}}">
+                        {{category | capitalize}}
+                    </a>
+                    {% endfor %}
+                </span>
+                {% endif %}
             </header>
 
             <main class="page-content" aria-label="Content">
@@ -21,9 +30,6 @@
             </main>
 
             <footer class="site-footer">
-                {%- if page.subscribe or page.layout=="post" -%}
-                    <p class="rss-subscribe">Want more? Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-                {%- endif -%}
             </footer>
         </div>
     </body>

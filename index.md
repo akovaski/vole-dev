@@ -5,5 +5,5 @@ title: vole.dev
 
 [about]({% link about.md %})
 
-[log]({% link log.html %})
+[music]({% link music.html %})
 
