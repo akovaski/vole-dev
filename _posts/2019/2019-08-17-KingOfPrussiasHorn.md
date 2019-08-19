@@ -5,9 +5,9 @@ date:   2019-08-17 10:00:00 -0500
 categories: music
 ---
 
-![Sheet music](https://vole-files.netlify.com/2019/08/KingOfPrussiasHorn/KingOfPrussiasHorn.png)
+![Sheet music](https://files.vole.dev/2019/08/KingOfPrussiasHorn.png)
 
-{% audio https://files.vole.dev/2019/08/KingOfPrussiasHorn/KingOfPrussiasHorn.ogg %}
+{% audio https://files.vole.dev/2019/08/KingOfPrussiasHorn.ogg %}
 
 [Youtube link](https://youtu.be/-b7Ts2HguNY)
 
