@@ -5,9 +5,9 @@ date:   2019-08-19 10:00:00 -0500
 categories: music
 ---
 
-![Sheet music](https://files.vole.dev/2019/08/LeFountainbleau.png)
+![Sheet music](/media/2019/08/LeFountainbleau.png)
 
-{% audio https://files.vole.dev/2019/08/LeFountainbleau.ogg %}
+{% audio /media/2019/08/LeFountainbleau.ogg %}
 
 [Youtube link](https://youtu.be/4hTT8HgOLto)
 
