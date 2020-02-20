@@ -12,4 +12,4 @@ You can find me by means of:
 
 [Github](https://github.com/akovaski)
 
-[LinkedIn](www.linkedin.com/in/matt-kovars)
+[LinkedIn](https://www.linkedin.com/in/matt-kovars)
